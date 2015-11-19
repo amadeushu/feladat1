@@ -1,0 +1,24 @@
+{
+    "name": "amadeushu/feladat1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tamas Balint",
+            "email": "tbalint@hu.amadeus.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "mkdir -p public/json"
+        ]
+    }
+}

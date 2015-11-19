@@ -1,0 +1,25 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * Feladatsor.
+ *
+ * @package    Amadeushu\Feladat1
+ * @author     Tamas Balint <tbalint@hu.amadeus.com>
+ * @copyright  2015 Amadeus Hungary
+ */
+
+// nevter
+namespace Amadeushu\Feladat1;
+
+// autoload betoltese
+require_once __DIR__ . '/vendor/autoload.php';
+
+// osztaly
+$app = new Init;
+
+// kiirjuk a kimenetre az ARGV tartalmat
+$app->writeConsole();
+
+// elmentjuk egy faljba az ARGV tartalmat
+$app->saveJsonFile();
